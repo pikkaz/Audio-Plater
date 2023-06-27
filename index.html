@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio-player</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <video autoplay="autoplay" muted="" loop="">
+                <source src="img/background_loop.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="visualiser">
+            <canvas width="1850" height="300"></canvas>
+        </div>
+        <div class="visualiser">
+            <canvas width="1850" height="300"></canvas>
+        </div>
+        <div class="player">
+            <h2 class="song-name" data-track="title">Nightcall</h2>
+            <img class="album-cover" data-track="cover" src="img/0.png">
+            <h3 class="artist" data-track="artist">by Kavinsky</h3>
+            <div class="buttons">
+                <button id="rwd_btn"></button>
+                <audio controls id="audio">
+                    <source data-track="audio" src="audio/0.mp3"  type="audio/mp3">
+                </audio>
+                <button id="fwd_btn"></button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
